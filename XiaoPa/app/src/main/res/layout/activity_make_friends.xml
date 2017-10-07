@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="15"
+
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0sp"
+      android:background="#FFA127"
+      android:layout_weight="1.25"
+      >
+  <ImageView
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:background="@drawable/back"
+      android:layout_marginTop="10dp"
+
+      />
+      <TextView
+          android:layout_width="50dp"
+          android:layout_height="22dp"
+          android:text="返回"
+          android:textSize="22sp"
+          android:layout_marginTop="12dp"
+          android:textColor="#FFFFFF"
+          />
+      
+      <View
+          android:layout_width="220dp"
+          android:layout_height="match_parent"/>
+      <TextView
+          android:id="@+id/tvaddf"
+          android:layout_width="match_parent"
+          android:layout_height="22dp"
+          android:text="添加"
+          android:textSize="22sp"
+          android:layout_marginTop="12dp"
+          android:textColor="#FFFFFF"
+          />
+
+  </LinearLayout>
+
+
+   <com.base.xiaopa.NoScrollViewPager
+       android:id="@+id/vp_mf"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="11.95"
+
+       />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_weight="1.8"
+        android:background="#FFFFFF"
+
+        >
+        <LinearLayout
+            android:id="@+id/llsearch"
+            android:onClick="ocsearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+        <ImageView
+            android:id="@+id/ivsearch"
+            android:layout_width="25sp"
+            android:layout_height="25dp"
+            android:background="@drawable/btexplore_gray"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="12dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="18sp"
+            android:text="发现"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="13dp"
+            android:textColor="#979797"
+            />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llsf"
+            android:onClick="ocsf"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+        <ImageView
+            android:id="@+id/ivsf"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btschool_gray"
+           android:layout_marginLeft="30dp"
+            android:layout_marginTop="12dp"
+            />
+     <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="同校交友"
+         android:layout_marginTop="9dp"
+         android:layout_marginLeft="10dp"
+         android:textSize="18sp"
+         android:textColor="#979797"
+        />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lllm"
+        android:onClick="oclm"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:id="@+id/ivlm"
+            android:layout_width="35dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btlinkman_gray"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="28dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="联系人"
+            android:textSize="18sp"
+            android:textColor="#979797"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="19dp"
+
+            />
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
