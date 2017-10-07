@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="65dp"
+    android:layout_height="65dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <ImageView
+        android:id="@+id/ivsf_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/black"
+
+        />
+    <TextView
+        android:id="@+id/tvsf_name"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="black"
+        android:textSize="12sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+</LinearLayout>
